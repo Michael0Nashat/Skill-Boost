@@ -285,28 +285,76 @@ function App() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="rounded-xl overflow-hidden shadow-lg">
-            <video
-              className="w-full h-64 object-cover"
-              controls
-              poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=1200"
-            >
-              <source src="your-video-url-1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/213626731?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
             <div className="p-6 bg-white">
-              <h3 className="text-xl font-bold mb-2">Motion Graphics</h3>
-              <p className="text-gray-600">Professional motion graphics and animations.</p>
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
             </div>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
-            <video
-              className="w-full h-64 object-cover"
-              controls
-              poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=1200"
-            >
-              <source src="your-video-url-2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/210306885?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-white">
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
+            </div>
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/209402467?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-white">
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
+            </div>
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/200705537?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
             <div className="p-6 bg-white">
               <h3 className="text-xl font-bold mb-2">Video Editing</h3>
               <p className="text-gray-600">Advanced video editing and post-production.</p>
