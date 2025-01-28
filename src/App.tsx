@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Layout, Figma, CheckCircle, ChevronLeft, ChevronRight, Monitor } from 'lucide-react';
+import { Layout, Figma, CheckCircle, ChevronLeft, ChevronRight, Monitor, Facebook } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const courses = [
   {
@@ -76,6 +77,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+      <Helmet>
+        <title>Skill Boost - Programming, UI/UX Design, and Video Editing Courses</title>
+        <meta name="description" content="Learn programming, UI/UX design, and video editing with Skill Boost. We offer comprehensive courses taught by industry experts to help you advance your career." />
+        <meta name="keywords" content="programming courses, Frontend Development ,Backend Development, Database Design, API Integration,web development, UI/UX design, video editing, online learning, coding bootcamp" />
+        <meta property="og:title" content="Skill Boost - Programming, UI/UX Design, and Video Editing Courses" />
+        <meta property="og:description" content="Learn programming, UI/UX design, and video editing with Skill Boost. We offer comprehensive courses taught by industry experts." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://skill-boost-woad.vercel.app/" />
+        <meta property="og:image" content="https://skill-boost-woad.vercel.app/sb.png" />
+      </Helmet>
+
       {/* Hero Section with Animation */}
       <header className="bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -230,13 +242,13 @@ function App() {
             {
               title: 'Flower shop',
               url: 'https://flower-shop-seven-gamma.vercel.app/',
-              description: 'Modern web development workflow and best practices',
+              description: 'Modern flower shop e-commerce platform',
               image: '1.png'
             },
             {
               title: 'Trips website',
               url: 'https://stay-flow.vercel.app/',
-              description: 'Building scalable online shopping platforms',
+              description: 'Modern travel booking and accommodation platform',
               image: '2.png'
             },
             {
@@ -248,7 +260,7 @@ function App() {
             {
               title: 'Coffee House',
               url: 'https://san-francisco-coffee.vercel.app/',
-              description: 'Building scalable online shopping platform',
+              description: 'Modern cafe website menu',
               image: '4.png'
             }
           ].map((item) => (
@@ -285,28 +297,76 @@ function App() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="rounded-xl overflow-hidden shadow-lg">
-            <video
-              className="w-full h-64 object-cover"
-              controls
-              poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=1200"
-            >
-              <source src="your-video-url-1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/213626731?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
             <div className="p-6 bg-white">
-              <h3 className="text-xl font-bold mb-2">Motion Graphics</h3>
-              <p className="text-gray-600">Professional motion graphics and animations.</p>
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
             </div>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
-            <video
-              className="w-full h-64 object-cover"
-              controls
-              poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=1200"
-            >
-              <source src="your-video-url-2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/210306885?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-white">
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
+            </div>
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/209402467?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
+            <div className="p-6 bg-white">
+              <h3 className="text-xl font-bold mb-2">Video Editing</h3>
+              <p className="text-gray-600">Advanced video editing and post-production.</p>
+            </div>
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full h-64 bg-gray-100">
+              <iframe 
+                src="https://www.behance.net/embed/project/200705537?ilo0=1" 
+                height="100%" 
+                width="100%" 
+                allowFullScreen 
+                loading="lazy" 
+                frameBorder="0" 
+                allow="clipboard-write" 
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full h-full object-cover"
+              ></iframe>
+            </div>
             <div className="p-6 bg-white">
               <h3 className="text-xl font-bold mb-2">Video Editing</h3>
               <p className="text-gray-600">Advanced video editing and post-production.</p>
@@ -358,8 +418,18 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-            <img src="sb.png" alt="Skill Boost Logo" className="w-24 h-24 mr-2" />
+              <img src="sb.png" alt="Skill Boost Logo" className="w-24 h-24 mr-2" />
               <span className="text-xl font-bold">Skill Boost</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61572521368776"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
             </div>
           </div>
           <div className="mt-8 text-center text-gray-500">
