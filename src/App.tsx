@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Layout, Figma, CheckCircle, ChevronLeft, ChevronRight, Monitor } from 'lucide-react';
+import { Layout, Figma, CheckCircle, ChevronLeft, ChevronRight, Monitor, Facebook } from 'lucide-react';
 
 const courses = [
   {
@@ -406,8 +406,18 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-            <img src="sb.png" alt="Skill Boost Logo" className="w-24 h-24 mr-2" />
+              <img src="sb.png" alt="Skill Boost Logo" className="w-24 h-24 mr-2" />
               <span className="text-xl font-bold">Skill Boost</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61572521368776"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
             </div>
           </div>
           <div className="mt-8 text-center text-gray-500">
